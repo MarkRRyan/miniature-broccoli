@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>THE FOLLOWERS OF THE MINIATURE BROCCOLI</h1>
+
+{% for follower in followers%}
+    <div class='card'>
+        <div class='card-content'>
+            <span class='card-title'>{{ follower.name }}</span>
+            <p>Age: {{ follower.age }}</p>
+            <p>Blurb: {{ follower.blurb }}</p>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}
