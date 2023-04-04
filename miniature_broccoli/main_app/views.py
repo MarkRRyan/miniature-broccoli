@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Follower
+from .models import Follower, Broccoli
 
 def home(request):
   return render(request, 'home.html')
@@ -12,6 +12,7 @@ def followers_index(request):
   return render(request, 'followers/index.html', { 'followers': followers })
   
 def images(request):
+  broccolis = Broccoli.objects.all()
   return render(request, 'images.html', {
-    'images': images
+    'broccolis': broccolis
   })
