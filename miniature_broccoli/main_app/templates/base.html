@@ -19,8 +19,9 @@
           <li><a href="/" class="left brand-logo">&nbsp;&nbsp;MINIATURE BROCCOLI</a></li>
         </ul>
         <ul class="right">
-          <li><a href="/about">About</a></li>
-          <li><a href='/followers/'>The Followers</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'index' %}">The Followers</a></li>
+          <li><a href="{% url 'images' %}">Images of the MINIATURE BROCCOLI</a></li>
         </ul>
       </div>
     </nav>
